@@ -2,14 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&amp;
+              subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/symbols-nerds.css">
   <title>Nerds</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <img class="logo" src="img/logo.png">
+      <a href="index.html">
+        <img class="logo" src="img/logo.png">
+      </a>
       <ul class="main-menu">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -20,25 +25,37 @@
         <a class="btn-cart-view">Корзина</a>
       </div>
       <div class="title">
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
+        <h1>Добро пожаловать в магазин<br>
+            готовых макетов</h1>
       </div>
     </div>
   </header>
-  <main class="container">
+  <main class="container clearfix">
     <form class="catalog-sidebar">
-      <b>Стоимость:</b>
+      <b>Стоимость:</b><br>
       <span>от</span>
       <input class="value-bar lower" type="text"></input>
       <span>до</span>
       <input class="value-bar upper" type="text"></input>
-      <b>Сетка:</b>
+      <b>Сетка:</b><br>
       <label>
-        <input class="catalog-radio" type="radio">Адаптивная</input>
-        <input class="catalog-radio" type="radio">Фиксированная</input>
-        <input class="catalog-radio" type="radio">Резиновая</input>
+        <div class="sidebar-grid">
+          <input class="catalog-radio" type="radio" checked>
+            <span class="icon-circle"></span>
+            Адаптивная
+          </input><br>
+          <input class="catalog-radio" type="radio">
+            <span class="icon-circle"></span>
+            Фиксированная
+          </input><br>
+          <input class="catalog-radio" type="radio">
+            <span class="icon-circle"></span>
+            Резиновая
+          </input>
+        </div>
       </label>
       <b>Особенности:</b>
-      <ul>
+      <ul class="sidebar-features">
         <li>
           <label>
             <input class="catalog-checkbox" type="checkbox" checked>Слайдер</input>
@@ -69,79 +86,124 @@
     </form>
     <div class="catalog-content">
       <span>Сортировать:</span>
-      <a class="catalog-sort" src="#">По цене</a>
-      <a class="catalog-sort" src="#">По типу</a>
-      <a class="catalog-sort" src="#">По функционалу</a>
-      <a class="catalog-sort increase" src="#"></a>
-      <a class="catalog-sort increase" src="#"></a>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-1.png">
-        <div class="item-descript">
-          <b>Aviator</b>
-          <p>
-            Одностраничный макет
-            с авторским дизайном
-          </p>
-          <a class="btn catalog-btn" href="#">8000 р.</a>
-        </div>
-      </div>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-2.png">
-        <div class="item-descript">
-          <b>Sunset</b>
-          <p>
-            Интернет-магазин
-            с личным кабинетом
-          </p>
-          <a class="btn catalog-btn" href="#">10000 р.</a>
-        </div>
-      </div>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-3.png">
-        <div class="item-descript">
-          <b>Forte</b>
-          <p>
-            Отличный макет
-            для личного блога
-          </p>
-          <a class="btn catalog-btn" href="#">5000 р.</a>
-        </div>
-      </div>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-4.png">
-        <div class="item-descript">
-          <b>Modern Organic Thai</b>
-          <p>
-            Сайт для ресторана
-            быстрого питания
-          </p>
-          <a class="btn catalog-btn" href="#">12000 р.</a>
-        </div>
-      </div>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-5.png">
-        <div class="item-descript">
-          <b>Avenue</b>
-          <p>
-            Макет для блога
-            о путешествиях
-          </p>
-          <a class="btn catalog-btn" href="#">8000 р.</a>
-        </div>
-      </div>
-      <div class="catalog-item">
-        <img class="item-img" src="img/goods-6.png">
-        <div class="item-descript">
-          <b>Divetail</b>
-          <p>
-            Интернет-магазин
-            с галереей товаров
-          </p>
-          <a class="btn catalog-btn" href="#">14000 р.</a>
-        </div>
-      </div>
+      <a class="catalog-sort" href="#">По цене</a>
+      <a class="catalog-sort" href="#">По типу</a>
+      <a class="catalog-sort" href="#">По функционалу</a>
+      <a class="catalog-sort icon-down-dir active" href="#"></a>
+      <a class="catalog-sort icon-up-dir" href="#"></a>
+      <ul>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-1.png">
+            <div class="item-descript">
+              <b>Aviator</b>
+              <p>
+                Одностраничный макет<br>
+                с авторским дизайном
+              </p>
+              <a class="btn catalog-btn" href="#">8000 р.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-2.png">
+            <div class="item-descript">
+              <b>Sunset</b>
+              <p>
+                Интернет-магазин<br>
+                с личным кабинетом
+              </p>
+              <a class="btn catalog-btn" href="#">10000 р.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-3.png">
+            <div class="item-descript">
+              <b>Forte</b>
+              <p>
+                Отличный макет<br>
+                для личного блога
+              </p>
+              <a class="btn catalog-btn" href="#">5000 р.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-4.png">
+            <div class="item-descript">
+              <b>Modern Organic<br>
+                  Thai</b>
+              <p>
+                Сайт для ресторана<br>
+                быстрого питания
+              </p>
+              <a class="btn catalog-btn" href="#">12000 р.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-5.png">
+            <div class="item-descript">
+              <b>Avenue</b>
+              <p>
+                Макет для блога<br>
+                о путешествиях
+              </p>
+              <a class="btn catalog-btn" href="#">8000 р.</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="catalog-item">
+            <div class="item-header">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+            <img class="item-img" src="img/goods-6.png">
+            <div class="item-descript">
+              <b>Dovetail</b>
+              <p>
+                Интернет-магазин<br>
+                с галереей товаров
+              </p>
+              <a class="btn catalog-btn" href="#">14000 р.</a>
+            </div>
+          </div>
+        </li>
+      </ul>
       <div class="paginator">
-        <a class="btn btn-paginator" href="#">1</a>
+        <a class="btn btn-paginator active-page" href="#">1</a>
         <a class="btn btn-paginator" href="#">2</a>
         <a class="btn btn-paginator" href="#">3</a>
         <a class="btn btn-paginator-next" href="#">Следующая</a>
@@ -149,29 +211,32 @@
     </div>
   </main>
   <div class="map">
-    <div class="write-us">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>
-        191186, Санкт-Петербург,<br>
-        ул. Большая Конюшенная, д. 19/8
-      </p>
-      <span>тел. +7 (812) 275-75-75</span>
-      <a class="btn" herf="#">Напишите нам</a>
-    </div>
-    <div class="placeholder">
+    <div class="container">
+      <div class="write-us">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <span>тел. +7 (812) 275-75-75</span><br>
+        <a class="btn" href="#">Напишите нам</a>
+      </div>
+      <div class="placeholder"></div>
     </div>
   </div>
   <div class="footer">
     <div class="container">
       <div class="footer-social">
-        <a class="social=vk" href="#">VK</a>
+        <a class="social-vk" href="#">VK</a>
         <a class="social-fb" href="#">FB</a>
         <a class="social-inst" href="#">INST</a>
       </div>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <div class="footer-content">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
     </div>
   </div>
 </body>
