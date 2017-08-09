@@ -13,7 +13,7 @@ body{
 
 .clearfix::after{
   content: "";
-  display: none;
+  display: table;
   clear: both;
 }
 
@@ -23,6 +23,7 @@ body{
 }
 
 .header{
+  padding-top: 20px;
   background-color: #eeeeee;
 }
 
@@ -59,8 +60,7 @@ body{
 }
 
 .slider-item{
-  background-color: rgba(0, 255, 0, 0.3);
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .slider-item-2,
@@ -69,16 +69,281 @@ body{
 }
 
 .slider-content{
+  display: inline-block;
   width: 380px;
+  margin-top: 50px;
 }
 
 .slider-item a{
+  display: inline-block;
   text-decoration: none;
   color: #ffffff;
   background-color: #fb565a;
   padding: 15px 70px;
+  margin-top: 30px;
+  border-radius: 2px;
 }
 
 .slider-item img{
   float: right;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 55px;
+}
+
+.slider-item p{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.features{
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+.features ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features li{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+  margin-right: 76px;
+}
+
+.features-item{
+  display: inline-block;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.features li:last-child{
+  margin-right: 0;
+}
+
+.features b{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.features p{
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.features a{
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 12px 40px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fb565a;
+  border-radius: 2px;
+}
+
+.features li:nth-child(2) a{
+  background-color: #00ca74;
+}
+
+.features li:nth-child(3) a{
+  background-color: #efc84a;
+}
+
+.line{
+  width: 100%;
+  height: 2px;
+  background: #eeeeee;
+}
+
+.index-content{
+  margin: 0;
+  margin-top: 40px;
+}
+
+.index-content ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.index-content li{
+  position: relative;
+  top: 0px;
+  left: 35px;
+  margin-top: 25px;
+}
+
+.index-content-right li::after,
+.index-content-left li::after
+{
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -35px;
+  width: 25px;
+  height: 2px;
+  background: #fb565a;
+}
+
+.index-content-left{
+  display: inline-block;
+  width: 575px;
+  margin-bottom: 75px;
+}
+
+.index-content-left b{
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.index-content-right{
+  display: inline-block;
+  width: 240px;
+  margin-left: 60px;
+  margin-bottom: 75px;
+}
+
+.index-content-right img{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.since-date{
+  position: relative;
+  z-index: 10;
+  width: 133px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.since-line{
+  position: relative;
+  top: -34px;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background: #eeeeee;
+}
+
+.index-content-right h2{
+  text-align: center;
+}
+
+.index-content-clients{
+  height: 165px;
+}
+
+.index-content-clients ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+}
+
+.index-content-clients li{
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.index-content-clients li:nth-child(1){
+  margin-right: 120px;
+}
+
+.index-content-clients li:nth-child(2){
+  margin-right: 120px;
+}
+
+.map{
+  width: 100%;
+  height: 415px;
+  margin: 0;
+  margin-top: 80px;
+  padding: 0;
+  background: url('../img/map.png');
+}
+
+.write-us{
+  position: relative;
+  top: 88px;
+  left: 0px;
+  width: 230px;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 20px;
+  background: #ffffff;
+}
+
+.write-us h2{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.write-us a{
+  display: inline-block;
+  margin: 0;
+  padding: 15px 55px;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #fb565a;
+  border-radius: 2px;
+}
+
+.placeholder{
+  width: 231px;
+  height: 190px;
+  position: relative;
+  top: -160px;
+  left: 650px;
+  background-image: url("../img/placeholder.png");
+}
+
+.footer{
+  padding-top: 75px;
+}
+
+.footer a{
+  float:left;
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  font-size: 0px;
+  margin-right: 25px;
+  background-image: url("../img/soc-icons.png");
+}
+
+.social-fb{
+  background-position: -90px 0px;
+}
+
+.social-inst{
+  background-position: -180px 0px;
+}
+
+.footer-content{
+  float: right;
+}
+
+.footer h2{
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.footer p{
+  padding-bottom: 50px;
 }

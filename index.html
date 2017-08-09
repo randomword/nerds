@@ -7,7 +7,7 @@
   <title>Nerds</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header clearfix">
     <div class="container">
       <img class="logo" src="img/logo.png" width="139px" height="56px">
       <ul class="main-menu">
@@ -19,10 +19,11 @@
       <div class="btn-cart">
         <a class="btn-cart-view">Корзина</a>
       </div>
-      <div class="slider container clearfix">
-        <div class="slider-item slider-item-1 clearfix">
+      <div class="slider container">
+        <div class="slider-item slider-item-1">
           <div class="slider-content">
-            <h2>Долго, дорого, скурпулезно.</h2>
+            <h2>Долго, дорого,<br>
+                скурпулезно.</h2>
             <p>
               Математически выверенный дизайн<br>
               для вашего сайта или мобильного приложения
@@ -60,41 +61,50 @@
   </header>
   <main class="container">
     <section class="features">
-      <div class="features-item">
-        <img class="feature-img" src="img/features-sites.png">
-        <b>Веб-сайты</b>
-        <p>
-          Мир никогда не будет прежним
-          после того как увидит ваш сайт!
-        </p>
-        <div class="btn btn-features">
-          <a hraf="#">Заказать</a>
-        </div>
-      </div>
-      <div class="features-item">
-        <img class="feature-img" src="img/features-apps.png">
-        <b>Приложения</b>
-        <p>
-          Покорите топ-10 приложений
-          в AppStore и Google Play
-        </p>
-        <div class="btn btn-features">
-          <a hraf="#">Заказать</a>
-        </div>
-      </div>
-      <div class="features-item">
-        <img class="feature-img" src="img/features-apps.png">
-        <b>Презентации</b>
-        <p>
-          Вы даже не подозреваете,
-          насколько вы изумительны!
-        </p>
-        <div class="btn btn-features">
-          <a hraf="#">Заказать</a>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <div class="features-item">
+            <img class="feature-img" src="img/features-sites.png">
+            <b>Веб-сайты</b>
+            <p>
+              Мир никогда не будет прежним
+              после того как увидит ваш сайт!
+            </p>
+            <div class="btn btn-features">
+              <a href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="features-item">
+            <img class="feature-img" src="img/features-apps.png">
+            <b>Приложения</b>
+            <p>
+              Покорите топ-10 приложений
+              в AppStore и Google Play
+            </p>
+            <div class="btn btn-features">
+              <a href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="features-item">
+            <img class="feature-img" src="img/features-pres.png">
+            <b>Презентации</b>
+            <p>
+              Вы даже не подозреваете,
+              насколько вы изумительны!
+            </p>
+            <div class="btn btn-features">
+              <a href="#">Заказать</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
-    <div class="index-content">
+    <div class="line"></div>
+    <div class="index-content clearfix">
       <div class="index-content-left">
         <h2>
           Мы - маленькая, но гордая
@@ -113,7 +123,8 @@
       </div>
       <div class="index-content-right">
         <img class="logo-big" src="img/logo-big.png">
-        <h2>Since 2014</h2><hr>
+        <div class="since-date"><h2>Since 2004</h2></div>
+        <div class="since-line"></div>
         <b>Как мы работаем:</b>
         <ul>
           <li>С самоотдачей 146%</li>
@@ -121,37 +132,50 @@
           <li>По предоплате 50%</li>
         </ul>
       </div>
-      <div class="index-content-clients">
-        <img class="client" src="img/client-1.png">
-        <img class="client" src="img/client-2.png">
-        <img class="client" src="img/client-3.png">
+      <div class="line"></div>
+      <div class="index-content-clients clearfix">
+        <ul>
+          <li>
+            <img class="client" src="img/client-1.png">
+          </li>
+          <li>
+            <img class="client" src="img/client-2.png">
+          </li>
+          <li>
+            <img class="client" src="img/client-3.png">
+          </li>
+        </ul>
       </div>
+      <div class="line"></div>
     </div>
   </main>
   <div class="map">
-    <div class="write-us">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>
-        191186, Санкт-Петербург,<br>
-        ул. Большая Конюшенная, д. 19/8
-      </p>
-      <span>тел. +7 (812) 275-75-75</span>
-      <a class="btn" herf="#">Напишите нам</a>
-    </div>
-    <div class="placeholder">
+    <div class="container">
+      <div class="write-us">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <span>тел. +7 (812) 275-75-75</span><br>
+        <a class="btn" href="#">Напишите нам</a>
+      </div>
+      <div class="placeholder"></div>
     </div>
   </div>
   <div class="footer">
     <div class="container">
       <div class="footer-social">
-        <a class="social=vk" href="#">VK</a>
+        <a class="social-vk" href="#">VK</a>
         <a class="social-fb" href="#">FB</a>
         <a class="social-inst" href="#">INST</a>
       </div>
-      <h2>Давайте дружить, это выгодно!</h2>
-      <p>
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <div class="footer-content">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
     </div>
   </div>
 </body>
