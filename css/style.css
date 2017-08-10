@@ -43,7 +43,7 @@ p{
 }
 
 .header{
-  height: 442px;
+  min-height: 200px;
   padding-top: 20px;
   background-color: #eeeeee;
   font-size: 14px;
@@ -82,8 +82,17 @@ p{
   margin-left: 15px;
 }
 
+.icon-basket{
+  display: inline-block;
+  font-size: 16px;
+  padding-right: 10px;
+  color: #a6a6a6;
+}
+
 .wrapper{
   position: relative;
+  height: 375px;
+  background: #eeeeee;
 }
 
 .wrapper input{
@@ -324,15 +333,20 @@ p{
 
 .since-date{
   position: relative;
+  top: -60px;
   z-index: 10;
   width: 133px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
+.since-date h2{
+  font-size: 16px;
+}
+
 .since-line{
   position: relative;
-  top: -34px;
+  top: -94px;
   z-index: 1;
   width: 100%;
   height: 2px;
@@ -341,6 +355,12 @@ p{
 
 .index-content-right h2{
   text-align: center;
+  text-transform: uppercase;
+}
+
+.index-content-right img{
+  position: relative;
+  top: -60px;
 }
 
 .index-content-clients{
