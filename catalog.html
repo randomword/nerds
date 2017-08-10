@@ -5,8 +5,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&amp;
               subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/symbols-nerds.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Nerds</title>
 </head>
 <body>
@@ -31,54 +31,65 @@
     </div>
   </header>
   <main class="container clearfix">
-    <form class="catalog-sidebar">
+    <form class="catalog-sidebar" action="https://echo.htmlacademy.ru" method="post">
       <b>Стоимость:</b><br>
       <span>от</span>
       <input class="value-bar lower" type="text"></input>
       <span>до</span>
       <input class="value-bar upper" type="text"></input>
       <b>Сетка:</b><br>
-      <label>
-        <div class="sidebar-grid">
-          <input class="catalog-radio" type="radio" checked>
-            <span class="icon-circle"></span>
-            Адаптивная
-          </input><br>
-          <input class="catalog-radio" type="radio">
-            <span class="icon-circle"></span>
-            Фиксированная
-          </input><br>
-          <input class="catalog-radio" type="radio">
-            <span class="icon-circle"></span>
-            Резиновая
-          </input>
-        </div>
-      </label>
+      <div class="sidebar-grid">
+        <input class="catalog-radio" type="radio" id="grid-1" name="radio" checked>
+        <label for="grid-1">
+          <span class="icon-circle"></span>
+          Адаптивная
+        </label><br>
+        <input class="catalog-radio" type="radio" id="grid-2" name="radio">
+        <label for="grid-2">
+          <span class="icon-circle"></span>
+          Фиксированная
+        </label><br>
+        <input class="catalog-radio" type="radio" id="grid-3" name="radio">
+        <label for="grid-3">
+          <span class="icon-circle"></span>
+          Резиновая
+        </label>
+      </div>
       <b>Особенности:</b>
       <ul class="sidebar-features">
         <li>
-          <label>
-            <input class="catalog-checkbox" type="checkbox" checked>Слайдер</input>
+          <input class="catalog-checkbox" type="checkbox" name="check-1" id="check-1" checked>
+          <label for="check-1">
+            <span class="icon-check-off"></span>
+            Слайдер
           </label>
         </li>
         <li>
-          <label>
-            <input class="catalog-checkbox" type="checkbox">Блок преимуществ</input>
+          <input class="catalog-checkbox" type="checkbox" name="check-2" id="check-2">
+          <label for="check-2">
+            <span class="icon-check-off"></span>
+            Блок преимуществ
           </label>
         </li>
         <li>
-          <label>
-            <input class="catalog-checkbox" type="checkbox" checked>Новости</input>
+          <input class="catalog-checkbox" type="checkbox" name="check-3" id="check-3" checked>
+          <label for="check-3">
+            <span class="icon-check-off"></span>
+            Новости
           </label>
         </li>
         <li>
-          <label>
-            <input class="catalog-checkbox" type="checkbox">Галерея</input>
+          <input class="catalog-checkbox" type="checkbox" name="check-4" id="check-4">
+          <label for="check-4">
+            <span class="icon-check-off"></span>
+            Галерея
           </label>
         </li>
         <li>
-          <label>
-            <input class="catalog-checkbox" type="checkbox">Корзина</input>
+          <input class="catalog-checkbox" type="checkbox" name="check-5" id="check-5">
+          <label for="check-5">
+            <span class="icon-check-off"></span>
+            Корзина
           </label>
         </li>
       </ul>
