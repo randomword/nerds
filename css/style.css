@@ -350,6 +350,13 @@ p{
   text-transform: none;
 }
 
+.index-content-right h3,
+.index-content-left h3{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
 .index-content-right li::after,
 .index-content-left li::after
 {
@@ -384,12 +391,15 @@ p{
 
 .index-content-right img{
   display: inline-block;
-  margin-left: 30px;
+  position: relative;
+  top: 100px;
+  left: 50%;
+  margin-left: -90px;
 }
 
 .since-date{
   position: relative;
-  top: -60px;
+  top: -15px;
   z-index: 10;
   width: 133px;
   margin: 0 auto;
@@ -402,7 +412,7 @@ p{
 
 .since-line{
   position: relative;
-  top: -94px;
+  top: -49px;
   z-index: 1;
   width: 100%;
   height: 2px;
@@ -416,7 +426,7 @@ p{
 
 .index-content-right img{
   position: relative;
-  top: -60px;
+  top: -15px;
 }
 
 .index-content-clients{
