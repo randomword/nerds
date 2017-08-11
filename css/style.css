@@ -75,7 +75,19 @@ p{
   color: #000000;
 }
 
-.header .btn-cart{
+.header li a:hover{
+  color: #fb565a;
+}
+
+.header li a:active{
+  color: #8f8f8f;
+}
+
+.header .current-section{
+  border-bottom: 2px solid #fb565a;
+}
+
+.btn-cart{
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -87,6 +99,14 @@ p{
   font-size: 16px;
   padding-right: 10px;
   color: #a6a6a6;
+}
+
+.btn-cart:hover .icon-basket{
+  color: #fb565a;
+}
+
+.btn-cart:active .icon-basket{
+  color: #8f8f8f;
 }
 
 .wrapper{
@@ -269,6 +289,36 @@ p{
 
 .features li:nth-child(3) a{
   background-color: #efc84a;
+}
+
+.btn:hover,
+.modal-write-close:hover,
+.modal-write-form button:hover{
+  background-color: #d6494d;
+}
+
+.btn:active,
+.modal-write-form button:active{
+  background-color: #b63538;
+  border-top: 2px solid #9b2d30;
+}
+
+.features li:nth-child(2) a:hover{
+  background-color: #01a25e;
+}
+
+.features li:nth-child(2) a:active{
+  background-color: #009053;
+  border-top: 2px solid #007b74;
+}
+
+.features li:nth-child(3) a:hover{
+  background-color: #d6ae2c;
+}
+
+.features li:nth-child(3) a:active{
+  background-color: #c09b24;
+  border-top: 2px solid #a3841f;
 }
 
 .line{
@@ -466,7 +516,34 @@ p{
   height: 62px;
   font-size: 0px;
   margin-right: 25px;
-  background-image: url("../img/soc-icons.png");
+  background-image: url("../img/soc1-icons.png");
+}
+
+.social-btn{
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #e1e1e1;
+  background-image: none;
+  color: #ffffff;
+}
+
+.social-btn:hover{
+  background: #fb565a;
+}
+
+.social-btn:active{
+  background: #d6494d;
+  border-top: 2px solid #b63e42;
+}
+
+.icon-vk,
+.icon-facebook,
+.icon-instagramm{
+  position: relative;
+  top: 18px;
+  left: 14px;
+  font-size: 24px;
 }
 
 .social-fb{
@@ -546,6 +623,15 @@ p{
 
 .catalog-radio + label{
   cursor: pointer;
+  color: #283136;
+}
+
+.catalog-radio:hover + label{
+  color: #000000;
+}
+
+.catalog-radio:disabled + label{
+  color: #a9adaf;
 }
 
 .catalog-sidebar input[type="radio"]{
@@ -565,12 +651,47 @@ label .icon-circle:before{
   font-size: 24px;
 }
 
+.catalog-sidebar input[type="radio"]:not(checked):hover +
+label .icon-circle:before{
+  color: #b5b5b5;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="radio"]:checked:hover +
+label .icon-circle:before{
+  content: "\25cf";
+  color: #b5b5b5;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="radio"]:not(checked):disabled +
+label .icon-circle:before{
+  color: #a9adaf;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="radio"]:checked:disabled +
+label .icon-circle:before{
+  content: "\25cf";
+  color: #a9adaf;
+  font-size: 24px;
+}
+
 .catalog-checkbox{
   margin-bottom: 15px;
 }
 
 .catalog-checkbox + label{
   cursor: pointer;
+  color: #283136;
+}
+
+.catalog-checkbox:hover + label{
+  color: #000000;
+}
+
+.catalog-checkbox:disabled + label{
+  color: #a9adaf;
 }
 
 .catalog-sidebar input[type="checkbox"]{
@@ -592,6 +713,32 @@ label .icon-check-off:before{
   font-size: 24px;
 }
 
+.catalog-sidebar input[type="checkbox"]:not(checked):hover +
+label .icon-check-off:before{
+  color: #b5b5b5;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="checkbox"]:checked:hover +
+label .icon-check-off:before{
+  content: "\2611";
+  color: #b5b5b5;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="checkbox"]:not(checked):disabled +
+label .icon-check-off:before{
+  color: #a9adaf;
+  font-size: 24px;
+}
+
+.catalog-sidebar input[type="checkbox"]:checked:disabled +
+label .icon-check-off:before{
+  content: "\2611";
+  color: #a9adaf;
+  font-size: 24px;
+}
+
 .catalog-sidebar button{
   width: 155px;
   height: 40px;
@@ -602,6 +749,7 @@ label .icon-check-off:before{
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  background-color: #f1f1f1;
 }
 
 .catalog-content{
@@ -650,6 +798,37 @@ label .icon-check-off:before{
   color: #b2b2b2;
   text-decoration: none;
   border-bottom: 1px dotted #00ca74;
+}
+
+.catalog-content > a:hover{
+  color: #000000;
+  border-bottom: 1px solid #00ca74;
+}
+
+.catalog-content > a:active{
+  color: #000000;
+  border-bottom: 0;
+}
+
+.catalog-content > .active-sort{
+  color: #000000;
+  border-bottom: 0;
+}
+
+.catalog-content > .icon-down-dir:hover,
+.catalog-content > .icon-up-dir:hover{
+  border: 0;
+  color: #b2b2b2;
+}
+
+.catalog-content > .icon-down-dir:active,
+.catalog-content > .icon-up-dir:active{
+  border: 0;
+  color: #000000;
+}
+
+.catalog-content > .active:hover{
+  color: #00ca74;
 }
 
 .catalog-content ul{
@@ -757,10 +936,6 @@ label .icon-check-off:before{
   border-radius: 4px;
 }
 
-.paginator .active-page{
-  background: #ffffff;
-}
-
 .paginator .btn-paginator-next{
   display: inline-block;
   margin: 0;
@@ -772,6 +947,29 @@ label .icon-check-off:before{
   background: #f1f1f1;
   border: 2px solid #f1f1f1;
   border-radius: 4px;
+}
+
+.catalog-sidebar button:hover,
+.catalog-content .btn-paginator:hover,
+.catalog-content .btn-paginator-next:hover{
+  background: #e5e5e5;
+  border: 2px solid #e5e5e5;
+}
+
+.catalog-sidebar button:active,
+.catalog-content .btn-paginator:active,
+.catalog-content .btn-paginator-next:active{
+  background: #d5d5d5;
+  border: 2px solid #d5d5d5;
+  border-top: 2px solid #b5b5b5;
+}
+
+.paginator .active-page,
+.paginator .active-page:hover,
+.paginator .active-page:active{
+  background: #ffffff;
+  border: 2px solid #f1f1f1;
+  cursor: default;
 }
 
 .modal-write{
@@ -829,7 +1027,7 @@ label .icon-check-off:before{
 }
 
 .modal-write input[type="text"]{
-  border: 1px solid #d7dcde;
+  border: 2px solid #d7dcde;
   border-radius: 2px;
 }
 
@@ -859,12 +1057,24 @@ label .icon-check-off:before{
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #d7dcde;
+  border: 2px solid #d7dcde;
   border-radius: 2px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.modal-write .name:hover,
+.modal-write .mail:hover,
+.modal-write .comment:hover{
+  border: 2px solid #a2a9ac;
+}
+
+.modal-write .name:focus,
+.modal-write .mail:focus,
+.modal-write .comment:focus{
+  border: 2px solid #56bffb;
 }
 
 .modal-write .btn{
