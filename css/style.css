@@ -570,6 +570,7 @@ p{
   background: #e1e1e1;
   background-image: none;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .social-btn:hover{
@@ -1070,21 +1071,32 @@ label .icon-check-off:before{
   transform: rotate(-45deg);
 }
 
-.modal-write span{
+.modal-write-nojs{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 450px;
+}
+
+.modal-write span,
+.modal-write-nojs span{
   text-transform: none;
 }
 
-.modal-write .name-label{
+.modal-write .name-label,
+.modal-write-nojs .name-label{
   margin-right: 155px;
 }
 
-.modal-write input[type="text"]{
+.modal-write input[type="text"],
+.modal-write-nojs input[type="text"]{
   border: 2px solid #d7dcde;
   border-radius: 2px;
 }
 
 .modal-write .name,
-.modal-write .mail{
+.modal-write .mail,
+.modal-write-nojs .name,
+.modal-write-nojs .mail{
   width: 190px;
   height: 35px;
   margin-top: 10px;
@@ -1097,11 +1109,13 @@ label .icon-check-off:before{
   font-size: 12px;
 }
 
-.modal-write .name{
+.modal-write .name,
+.modal-write-nojs .name{
   margin-right: 20px;
 }
 
-.modal-write .comment{
+.modal-write .comment,
+.modal-write-nojs .comment{
   min-width: 426px;
   max-width: 426px;
   min-height: 110px;
@@ -1119,17 +1133,24 @@ label .icon-check-off:before{
 
 .modal-write .name:hover,
 .modal-write .mail:hover,
-.modal-write .comment:hover{
+.modal-write .comment:hover,
+.modal-write-nojs .name:hover,
+.modal-write-nojs .mail:hover,
+.modal-write-nojs .comment:hover{
   border: 2px solid #a2a9ac;
 }
 
 .modal-write .name:focus,
 .modal-write .mail:focus,
-.modal-write .comment:focus{
+.modal-write .comment:focus,
+.modal-write-nojs .name:focus,
+.modal-write-nojs .mail:focus,
+.modal-write-nojs .comment:focus{
   border: 2px solid #56bffb;
 }
 
-.modal-write .btn{
+.modal-write .btn,
+.modal-write-nojs .btn{
   width: 449px;
   padding-top: 13px;
   padding-bottom: 13px;
