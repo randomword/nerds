@@ -604,6 +604,7 @@ p{
   background: #f1f1f1;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
 }
 
 .catalog-sidebar ul{
@@ -793,7 +794,7 @@ label .icon-check-off:before{
   line-height: 18px;
 }
 
-.catalog-content a{
+.catalog-content > a{
   margin-left: 40px;
   color: #b2b2b2;
   text-decoration: none;
@@ -891,7 +892,7 @@ label .icon-check-off:before{
   background: #ffffff;
 }
 
-.item-descript a{
+.item-descript .catalog-btn{
   display: inline-block;
   position: absolute;
   bottom: 30px;
@@ -905,11 +906,18 @@ label .icon-check-off:before{
   border: none;
   border-radius: 2px;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .item-descript p{
   font-size: 14px;
   line-height: 18px;
+}
+
+.item-title{
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .catalog-item:hover .item-header{
