@@ -408,7 +408,7 @@ p{
 .map-content{
   position: absolute;
   top: -20px;
-  left: 250px;
+  left: 270px;
 }
 
 .write-us{
@@ -772,4 +772,109 @@ label .icon-check-off:before{
   background: #f1f1f1;
   border: 2px solid #f1f1f1;
   border-radius: 4px;
+}
+
+.modal-write{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  bottom: 50px;
+  left: 50%;
+  width: 460px;
+  height: 365px;
+  margin-left: -315px;
+  padding-top: 50px;
+  padding-right: 90px;
+  padding-left: 80px;
+  background: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-write-close{
+  position: absolute;
+  z-index: 20;
+  top: 7px;
+  right: 7px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fb565a;
+}
+
+.modal-write-close::before,
+.modal-write-close::after{
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  width: 25px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.modal-write-close::before{
+  transform: rotate(45deg);
+}
+
+.modal-write-close::after{
+  transform: rotate(-45deg);
+}
+
+.modal-write span{
+  text-transform: none;
+}
+
+.modal-write .name-label{
+  margin-right: 155px;
+}
+
+.modal-write input[type="text"]{
+  border: 1px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.modal-write .name,
+.modal-write .mail{
+  width: 190px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.modal-write .name{
+  margin-right: 20px;
+}
+
+.modal-write .comment{
+  min-width: 426px;
+  max-width: 426px;
+  min-height: 110px;
+  max-height: 110px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #d7dcde;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.modal-write .btn{
+  width: 449px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: #fb565a;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
 }
