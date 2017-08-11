@@ -878,3 +878,7 @@ label .icon-check-off:before{
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.modal-content-show{
+  display: block;
+}
