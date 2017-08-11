@@ -446,6 +446,36 @@ p{
   padding-top: 15px;
 }
 
+.client-1{
+  width: 198px;
+  height: 37px;
+  background: url("../img/client-1.png");
+}
+
+.client-2{
+  width: 199px;
+  height: 68px;
+  background: url("../img/client-2.png");
+}
+
+.client-3{
+  width: 209px;
+  height: 86px;
+  background: url("../img/client-3.png");
+}
+
+.client-1:hover{
+  background: url("../img/client-1-hover.png");
+}
+
+.client-2:hover{
+  background: url("../img/client-2-hover.png");
+}
+
+.client-3:hover{
+  background: url("../img/client-3-hover.png");
+}
+
 .index-content-clients li:nth-child(1){
   margin-right: 120px;
 }
