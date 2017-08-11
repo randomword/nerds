@@ -75,11 +75,13 @@ p{
   color: #000000;
 }
 
-.header li a:hover{
+.header li a:hover,
+.header .btn-cart-view:hover{
   color: #fb565a;
 }
 
-.header li a:active{
+.header li a:active,
+.header .btn-cart-view:active{
   color: #8f8f8f;
 }
 
@@ -293,12 +295,14 @@ p{
 
 .btn:hover,
 .modal-write-close:hover,
-.modal-write-form button:hover{
+.modal-write-form button:hover,
+.item-descript .catalog-btn:hover{
   background-color: #d6494d;
 }
 
 .btn:active,
-.modal-write-form button:active{
+.modal-write-form button:active,
+.item-descript .catalog-btn:active{
   background-color: #b63538;
   border-top: 2px solid #9b2d30;
 }
